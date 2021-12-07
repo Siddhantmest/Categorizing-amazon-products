@@ -14,8 +14,13 @@ Amazon has a ton of products in various categories so the task is to create a cl
 
 **Caution**: While training the model in this ipynb you might run into memory issues you can follow the steps for windows system -
     a. Press windows + x, click on system
+
     b. Navigate to 'Advanced system settings' in the right side, a system properties pop up will open
+
     c. In the 'advanced tab' click on settings, a performance options pop up will open
+
     d. In the 'advanced tab' click on change, a virtual memory pop up will open
+
     e. Deselect 'Automatically manage paging file size for all drives', select the drive on which the code is running and then click custom size
+    
     f. Try to keep maximum size around 33000 MB for the code to run, click on set, ok and restart your system for the changes to take effect
