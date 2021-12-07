@@ -13,6 +13,7 @@ Amazon has a ton of products in various categories so the task is to create a cl
 2. `Feature_eng_modeling_naive_approach.ipynb`: The dataset is highly imbalanced so to balance the data first the keywords of the title for the categories with less than 600 products are grouped together to create a document and cosine similarity is used to merge the closely related documents. The entire data is used for modeling purposes resulting in feeding a lot of features to the model and consequently a very high running time along with more memory usage and model overfitting the training data.
 
 **Caution**: While training the model in this ipynb you might run into memory issues you can follow the steps for windows system -
+
     a. Press windows + x, click on system
 
     b. Navigate to 'Advanced system settings' in the right side, a system properties pop up will open
