@@ -5,6 +5,7 @@ Amazon has a ton of products in various categories so the task is to create a cl
 ## Dataset Schema 
 
 |Id |title |description |url |category_id |created_at |
+
 | | | | | | |
 
 ## Project sturcture
