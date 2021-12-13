@@ -18,6 +18,8 @@ Amazon has a ton of products in various categories so the task is to create a cl
 
 P.S. - I tried implementing Linear Discriminant Analysis for dimensionality reduction in 4th and 5th ipynb but it gave very poor results.
 
+[Raw Dataset](https://drive.google.com/file/d/1fXRzKhNrjf9HCAaTTWcan-6wPvV2Zk28/view?usp=sharing)
+
 **Caution**: While training the models you might run into memory issues to resolve the error for windows system you can follow the steps -
 
     a. Press windows + x, click on system
