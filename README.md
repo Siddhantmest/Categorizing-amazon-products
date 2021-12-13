@@ -4,7 +4,7 @@ Amazon has a ton of products in various categories so the task is to create a cl
 
 ## Project sturcture
 
-1. **`Data_cleaning.ipynb`**: It has the steps to first summarize the description and keep only the top 2 relevant sentences for the title, next data cleaning is implemented on the title and the summarized decription and the resulting dataframe is stored in a csv file which can be used for feature engineering and modeling, finally keyword extraction is implemented on the cleaned title and description and only the noun keyswords are kept and the resulting dataframe is stored in another csv file which can be used for feature engineering and modeling.
+1. **`Data_cleaning.ipynb`**: It has the steps to first summarize the description and keep only the top 2 relevant sentences for the title, next data cleaning is implemented on the title and the summarized decription and the resulting dataframe is stored in a csv file which can be used for feature engineering and modeling. Keyword extraction is implemented on the cleaned title and description and only the noun keyswords are kept and the resulting dataframe is stored in another csv file to be used for feature engineering and modeling.
 
 2. **`Modeling_naive_approach.ipynb`**: The dataset is highly imbalanced so to balance the data first the keywords of the title for the categories with less than 600 products are grouped together to create a document and cosine similarity is used to merge the closely related documents. The entire data is used for modeling purposes resulting in feeding a lot of features to the model and consequently a very high running time along with more memory usage and model overfitting the training data.
 
@@ -14,9 +14,11 @@ Amazon has a ton of products in various categories so the task is to create a cl
 
 5. **`Topic_modeling_keywords.ipynb`**: The major difference between this and `Cosine_similarity_keywords.ipynb` is that in this file instead of using cosine similarity to perform feature engineering to merge categories, i implemented Latent Dirichlet Allocation (LDA) with a threshold of 0.5.
 
+6. **`Topic_modeling_keywords_new_vectorization.ipynb`**: The major difference between this and `Topic_modeling_keywords.ipynb` is that in this file instead of using the max_features in TF-IDF which takes the top features of the entire data I took the top 10 feature names for each category and used those feature names in vectorizing the data.
+
 P.S. - I tried implementing Linear Discriminant Analysis for dimensionality reduction in 4th and 5th ipynb but it gave very poor results.
 
-**Caution**: While training the model in 2nd and 3rd ipynb you might run into memory issues to rectify them you can follow the steps for windows system -
+**Caution**: While training the models you might run into memory issues to resolve the error for windows system you can follow the steps -
 
     a. Press windows + x, click on system
 
